@@ -1,0 +1,181 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  font-size:1.2em;
+  letter-spacing: 0.5px;
+  line-height: 1.6em;
+	margin: 0;
+  text-align: center;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(74, 74, 74);
+}
+
+img {
+  max-width: 95%;
+}
+
+ul {
+  line-height: 3em;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+ text-transform: uppercase;
+ font-weight: bolder;
+
+}
+
+/* =================================
+  Main Styles
+==================================== */
+
+.introduction {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  color: grey;
+}
+
+.profile-picture {
+  max-width: 70%;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px lightgrey;
+  margin-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bolder;
+}
+
+.contact {
+  margin-top: 100px;
+  color: grey;
+}
+
+
+
+/* =================================
+  Pseudo-classes
+==================================== */
+
+a:link {
+  color: rgb(74, 74, 74);
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: rgb(74, 74, 74);
+
+  /* =================================
+    Pseudo-classes
+  ==================================== */
+
+@media (min-width: 768px) {
+
+  .main-nav {
+  background-color: red;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+
+
+
+
+
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
