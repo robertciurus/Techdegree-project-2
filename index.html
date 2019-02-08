@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <title>Portfolio Page</title>
     <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald"  rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 <body>
   <header>
-    <div class="clearfix">
+    <div class="wrapper">
       <h1 class="name">Student Name</h1>
       <ul class="main-nav">
         <li><a href="#">Home</a></li>
@@ -19,37 +20,51 @@
     </div>
   </header>
 
-  <div class="introduction">
+  <div class="introduction clearfix">
     <img src="images/responsive-layout-profile.png" alt="Picture of programmer" class="profile-picture">
-    <alt="Picture of programmer">
-    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use</p>
+    <p class="introduction-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use</p>
   </div>
+  <div class="container">
 
-  <h3 id="portfolio">Portfolio</h3>
+    <h3 id="portfolio">Portfolio</h3>
 
-    <img src="images/portfolio-1.png" alt="Picture of a marketing page">
-    <h2>Marketing Page</h2>
-    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      <section class="marketing">
+        <img src="images/portfolio-1.png" alt="Picture of a marketing page">
+        <h2>Marketing Page</h2>
+        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+      </section>
 
-    <img src="images/portfolio-2.png" alt="Picture of a search page">
-    <h2>Search Page</h2>
-    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+      <section class="search">
+        <img src="images/portfolio-2.png" alt="Picture of a search page">
+        <h2>Search Page</h2>
+        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+      </section>
 
-    <img src="images/portfolio-3.png" alt="Picture of a travel app">
-    <h2>Travel App</h2>
-    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+      <section class="travel">
+        <img src="images/portfolio-3.png" alt="Picture of a travel app">
+        <h2>Travel App</h2>
+        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+      </section>
 
-    <img src="images/portfolio-4.png" alt="Picture of a map with different points marked">
-    <h2>Map of Favorite Spots</h2>
-    <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour</p>
+      <section class="map">
+        <img src="images/portfolio-4.png" alt="Picture of a map with different points marked">
+        <h2>Map of Favorite Spots</h2>
+        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour</p>
+      </section>
 
-    <img src="images/portfolio-5.png" alt="Picture of a photo gallery">
-    <h2>Photo Gallery</h2>
-    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      <section class="gallery">
+        <img src="images/portfolio-5.png" alt="Picture of a photo gallery">
+        <h2>Photo Gallery</h2>
+        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      </section>
 
-    <img src="images/portfolio-6.png" alt="Picture of a calculator">
-    <h2>Calculator</h2>
-    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+      <section class="calculator">
+        <img src="images/portfolio-6.png" alt="Picture of a calculator">
+        <h2>Calculator</h2>
+        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+      </section>
+
+  </div>
 
   <div class="contact">
 
@@ -57,13 +72,20 @@
 
     <p>If you're interested in chatting or want more information about what i've been working on, I'd love to hear from you!</p>
     <p>Phone <a href="tel:+11115551234">+1 (111) 555-1234</a></p>
-    <p>Email <a href="mailto: email@yoursite.com">email@yoursite.com</b></p>
+    <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
 
   </div>
 
   <footer class="main-footer">
     <p>Student name</p>
-    <p><a href="#">BACK TO TOP</a></p>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="backtotop"><a href="#">back to top</a></p>
   </footer>
 
 </body>

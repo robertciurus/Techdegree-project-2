@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Sarabun', 'Oswald', sans-serif;
   font-size:1.2em;
+  color: rgb(74, 74, 74);
   letter-spacing: 0.5px;
   line-height: 1.6em;
 	margin: 0;
@@ -59,6 +60,8 @@ li {
   margin-top: 50px;
   margin-bottom: 100px;
   color: grey;
+  text-align: center;
+  letter-spacing: 1.8px;
 }
 
 .profile-picture {
@@ -75,11 +78,18 @@ li {
   font-weight: bolder;
 }
 
+.main-footer ul {
+  display: none;
+}
+
 .contact {
   margin-top: 100px;
   color: grey;
 }
 
+.backtotop {
+  text-transform: uppercase;
+}
 
 
 /* =================================
@@ -94,88 +104,117 @@ a:link {
 
 a:visited {
   color: rgb(74, 74, 74);
+}
+
+a:hover {
+  color: lightgrey;
+}
 
   /* =================================
-    Pseudo-classes
+    Media Queries
   ==================================== */
 
 @media (min-width: 768px) {
 
   .main-nav {
-  background-color: red;
+    word-spacing: 30px;
+  }
+
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .profile-picture {
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .introduction-text {
+    text-align: left;
+  }
+
+  .contact {
+    margin-left: 200px;
+    margin-right: 200px;
+
+  }
+
+  .marketing,
+  .search,
+  .travel,
+  .map,
+  .gallery,
+  .calculator {
+    display: inline-block;
+    width: 49%;
+    margin-right: -2px;
+    padding: 10px 5px;
+    vertical-align: top;
+  }
+
+  .backtotop {
+    display: none;
+  }
+
+  .main-footer ul {
+    display:block;
+    margin-top: 5px;
+  }
+
+  .main-footer ul li {
+    float: left;
+  }
+
+  .main-footer a{
+  padding-left: 20px;
   }
 
 }
 
+@media (min-width: 1024px) {
 
+  .marketing,
+  .search,
+  .travel,
+  .map,
+  .gallery,
+  .calculator {
+    display: inline-block;
+    width: calc(98% / 3);
+    margin-right: -2px;
+    padding: 10px 5px;
+    vertical-align: top;
+   }
 
+   .main-nav {
+      margin-top: 20px;
+      margin-right: 90px;
 
+   }
 
+   .wrapper {
+     display: flex;
+     justify-content: space-between;
+   }
 
+   .name {
+     padding-left: 20px;
+     float: left;
+   }
 
+   .profile-picture {
+     margin-right: 30px;
+   }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =================================
+  clearfix
+==================================== */
 
 .clearfix::after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-
-
-
-
-
-
-
-/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
